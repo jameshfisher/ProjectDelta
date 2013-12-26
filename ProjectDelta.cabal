@@ -1,0 +1,13 @@
+name:          ProjectDelta
+version:       0.0.1
+synopsis:      A program for authenticating employees of a company for access to various internal tools
+homepage:      https://github.com/projectdeltasea/projectdelta/blob/master/README.md
+author:        James Fisher
+license:       PublicDomain
+build-type:    Simple
+cabal-version: >= 1.2
+
+executable ProjectDelta
+  build-depends:   base, containers, transformers, directory, bytestring, text, haskeline, sqlite-simple, scotty, scrypt >= 0.4.0
+  main-is:         ProjectDelta.hs
+  ghc-options:     -Wall
